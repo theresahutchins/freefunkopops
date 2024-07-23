@@ -57,8 +57,8 @@ float: left;
 }
  body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 32px;
+            padding: 10px;
             background-color: #f4f4f4;
         }
 

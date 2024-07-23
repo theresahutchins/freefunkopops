@@ -45,8 +45,7 @@ float: left;
   padding: 12px 0; /* Some top and bottom padding */
   transition: all 0.3s ease; /* Add transition for hover effects */
   color: white; /* White text color */
-  font-size: 36px; /* Increased font size */
-  margin:0;padding:0; 
+  font-size: 36px; /* Increased font size */ 
 }
 
 .icon-bar a:hover {

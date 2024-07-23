@@ -4,6 +4,40 @@
   overflow: auto; /* Overflow due to float */
 }
 
+#albs {
+float: right;    
+ margin: 0 15px 0 0;
+}
+#albsl {
+float: left;    
+ margin: 0 15px 0 0;
+}
+
+.button {
+  animation: ;
+  border: none;
+  color: whitesmoke;
+  padding: 15px 32px;
+  background-color: darkred;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 4px 9px #001;
+
+}
+#tab3 {
+  background-image: "skelly.jpeg";
+}
+.button:hover {background-color: #EEB4EA}
+
+.button:active {
+  background-color: #EEB4EA;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .tab-container a {
   float: left; /* Float links side by side */
   text-align: center; /* Center-align text */
@@ -52,6 +86,10 @@
 
         .active-tab {
             background-color: lightpink;
+        }
+
+        .active-content {
+            display: block;
         }
 
         .active-content {

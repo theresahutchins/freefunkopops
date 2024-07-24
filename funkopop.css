@@ -1,3 +1,4 @@
+
 .icon-bar {
   width: 100%; /* Full-width */
   background-color: #555; /* Dark-grey background */
@@ -28,8 +29,17 @@ float: left;
   box-shadow: 4px 9px #001;
 
 }
+#tab1 {
+  background-image: url("me.jpeg");
+}
+#tab2 {
+  background-image: url("check.jpg");
+}
 #tab3 {
-  background-image: "skelly.jpeg";
+  background-image: url("3d.jpg");
+}
+#tab4 {
+  background-image: url("cd.jpg");
 }
 .button:hover {background-color: #EEB4EA}
 
@@ -41,12 +51,17 @@ float: left;
 .tab-container a {
   float: left; /* Float links side by side */
   text-align: center; /* Center-align text */
-  width: 25%; /* Equal width (5 icons with 20% width each = 100%) */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
   padding: 12px 0; /* Some top and bottom padding */
   transition: all 0.3s ease; /* Add transition for hover effects */
   color: white; /* White text color */
-  font-size: 36px; /* Increased font size */ 
+  font-size: 36px; /* Increased font size */
 
+}
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
 }
 
 .icon-bar a:hover {
@@ -56,12 +71,17 @@ float: left;
 .active {
   background-color: #04AA6D; /* Add an active/current color */
 }
- body {
+/* body {
             font-family: Arial, sans-serif;
-        
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
-
+        */
+body {
+  background-image: url("skelly.jpeg");
+  cursor: url("https://www.vecteezy.com/png/22286604-cursor-icon-pink-3d-render");
+}
         .tab-container {
             display: flex;
             text-align: center; /* Center-align text */
@@ -69,15 +89,20 @@ float: left;
             padding: 12px 0; /* Some top and bottom padding */
             transition: all 0.3s ease; /* Add transition for hover effects */
             color: white; /* White text color */
-  font-size: 36px; /* Increased font size */
+            font-size: 36px; /* Increased font size */
+            border-style: dotted;
+            border-width: thick;
+            border-color: red;
+
         }
 
         .tab {
           display: flex;
-            background-color: lightgreen;
+            background-color: black;
             padding: 10px 20px;
             cursor: pointer;
             width: 100%;
+
         }
 
         .tab-content {
@@ -85,11 +110,7 @@ float: left;
         }
 
         .active-tab {
-            background-color: lightpink;
-        }
-
-        .active-content {
-            display: block;
+            background-color: red;
         }
 
         .active-content {

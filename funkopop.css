@@ -1,9 +1,21 @@
-/* .icon-bar {
-  width: 100%; 
-  background-color: #555; 
-  overflow: auto;
-} */
-/* The sidebar menu */
+
+.column {
+  float: left;
+  width: 50%;
+  text-decoration-color: purple;
+  
+}
+#col1 {
+  background-color: lightpink;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
@@ -66,11 +78,17 @@ float: left;
   box-shadow: 4px 9px #001;
 
 }
+#sotd {
+  background-color: pink;
+}
 #tab1 {
   background-image: url("me.jpeg");
+
+  height: 100vh;
 }
 #tab2 {
   background-image: url("check.jpg");
+  height: 100vh;
 }
 #tab3 {
   background-image: url("3d.jpg");
@@ -117,7 +135,7 @@ float: left;
         */
 body {
   background-image: url("skelly.jpeg");
-
+ 
   margin-left: 160px;
   cursor: url("https://www.vecteezy.com/png/22286604-cursor-icon-pink-3d-render");
 }
@@ -141,6 +159,7 @@ body {
             padding: 10px 20px;
             cursor: pointer;
             width: 100%;
+
 
         }
 

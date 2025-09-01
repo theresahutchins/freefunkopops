@@ -1,3 +1,24 @@
+.custom-audio-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+      background-color: #333;
+      border-radius: 8px;
+  }
+
+  #playPauseBtn {
+      background-color: pink;
+      color: blue;
+      border: dashed;
+      padding: 8px 15px;
+      border-radius: 4px;
+    cursor: pointer;
+    }
+
+
+
+
 
 .column {
   float: left;
@@ -177,3 +198,4 @@ body {
         .active-content {
             display: block;
         }
+

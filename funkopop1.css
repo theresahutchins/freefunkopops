@@ -1,0 +1,197 @@
+/* --- Base & Desktop Styles --- */
+.custom-audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+#playPauseBtn {
+    background-color: pink;
+    color: blue;
+    border: dashed;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-decoration-color: purple;
+}
+
+#col1 {
+    background-color: lightpink;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: url("plaid.avif");
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: darkred;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Desktop margin */
+    padding: 0px 10px;
+}
+
+#albs {
+    float: right;    
+    margin: 0 15px 0 0;
+}
+#albsl {
+    float: left;    
+    margin: 0 15px 0 0;
+}
+
+.button {
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    background-color: darkred;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 4px 9px #001;
+}
+#sotd {
+    background-color: pink;
+}
+#tab1 {
+    background-image: url("me.jpeg");
+    height: 100vh;
+}
+#tab2 {
+    background-image: url("check.jpg");
+    height: 100vh;
+}
+#tab3 {
+    background-image: url("3d.jpg");
+}
+#tab4 {
+    background-image: url("cd.jpg");
+}
+.button:hover {background-color: #EEB4EA}
+
+.button:active {
+    background-color: #EEB4EA;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.tab-container a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon-bar a:hover {
+    background-color: blueviolet;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+body {
+    background-image: url("skelly.jpeg");
+    margin-left: 160px; /* Desktop margin */
+    cursor: url("https://www.vecteezy.com/png/22286604-cursor-icon-pink-3d-render"), auto;
+}
+
+.tab-container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    border-style: dotted;
+    border-width: thick;
+    border-color: red;
+}
+
+.tab {
+    display: flex;
+    background-color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.active-tab {
+    background-color: red;
+}
+.tab:hover {
+    background-color: darkred;
+}
+.active-content {
+    display: block;
+}
+
+
+/* --- Mobile Screen Mode Only --- */
+@media screen and (max-width: 768px) {
+    /* Shifts the body and main content over to fill the left space */
+    body {
+        margin-left: 0;
+    }
+    .main {
+        margin-left: 0;
+    }
+    /* Completely hides the side navigation on mobile */
+    .sidenav {
+        display: none;
+    }
+}
+
+
+
